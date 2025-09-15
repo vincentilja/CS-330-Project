@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>C++: Hello, World</title>
+    </head>
+    <body>
+        <h1>How to write Hello, World in C++</h1>
+        <h2>Visual Studio Code</h2>
+        <p>The first step of learning any program is being able to write it out. This is where Visual Studio Code (colloquially referred to as VSCode) comes into play!
+            You can download VSCode by visiting this link: <a>https://code.visualstudio.com/download</a>, and downloading the version of VSCode corresponding to your operating
+            system. Though this language doesn't come with a programming environment, VSCode is considered one of the best programming environments for C++. However, the user will
+            need to complete a few extra steps before it is able to run.
+        </p>
+        <p>After VSCode is downloaded, input the command (Ctrl + Shift + X) or simply navigate to "Extensions" in the sidebar. Type "C/C++" into the search bar and download both
+            C/C++ and the C/C++ Extension Pack.
+        </p>
+        <h2>Microsoft Visual C++ (MSVC) </h2>
+        <p>You might hit a snag if you attempt to create a program in VSCode after following the previous steps. This is because C++ needs a special compiler to be downloaded
+            in order for users to write C++ in VSCode. Go to this page: <a>https://visualstudio.microsoft.com/downloads/#remote-tools-for-visual-studio-2022</a>, select the 
+            "Tools for Visual Studio" dropdown menu and download the link associated with "Build Tools for Visual Studio 2022." Once the download has completed, open the
+            Installer, select the "Desktop development with C++" square check box, and click Install in the bottom right corner.
+        </p>
+        <p>You can verify that it was set up correctly by opening "Developer Command Prompt for VS 2022" and inputting the command "cl". If it flashes a copyright statement and 
+            displays "usage: cl [option... ] filename... [ /link linkoption...]", the download was successful. From here, create a folder in Developer Command Prompt using the 
+            commands "mkdir folderName" and "cd folderName". Then create a subfolder using the commands "mkdir subFolder" and "cd subFolder", followed by "code ." This last command will
+            open VSCode in the subfolder. Create a new file within which to write your "Hello, World" command.
+        </p>
+        <h2>Hello, World</h2>
+        <h3>Comments</h3>
+        <p>Comments in C++ can be made by using two frontslashes</p>
+        <li>Example: // This is a comment</li>
+        <h3>#include <iostream></h3>
+            <p>This command allows the user to write statements from C++'s input-output library (io in iostream meaning "input-output"). Because a print statement is output, one must 
+                include this command if one wants to use input-output library functions </p>
+        <h3>using namespace std;</h3>
+        <p>To prevent users from using the same name for functions and variables, C++ users must import something called a namespace, so that no collisions occur if a user created function 
+            or variable is named similarly to a C++ function or variable. The "std" (read standard) namespace is the most commonly used C++ namespace as it contains the most basic features of C++.
+        </p>
+        <h3>main() function</h3>
+        <p>Main functions work similarly in C++ as they do in other languages like Python. When the program is executed, it will immediately navigate to the main function call and begin executing the 
+            code contained with it. Essentially, it provides a starting point for your code. You can use a main function to call other default or user created functions. Code within the main function is
+            indented. You can indent codeblocks within a function by pressing the "Tab" key.
+        </p>
+        <h3>cout</h3>
+        <p>cout, read as "c out", is the output or print function in C++ that allows you to print a specified string, integer, etc. to a terminal. The syntax is as follows:</p>
+        <li>cout << "Hello, World!";</li>
+        <p>Note that semicolons are required at the end of each statement</p>
+        <h3>return</h3>
+        <p>Users should include a return statement at the end of each function, even if it will not be used. For such a simple program with one output of one string, we can set the return value as 0</p>
+        <li>return 0</li>
+        <h2>Sources</h2>
+        <p>kartik. (2025, July 23). Understanding first C++ program. GeeksforGeeks. https://www.geeksforgeeks.org/cpp/writing-first-c-program-hello-world-example/</p>
+        <p>Microsoft. (2021, November 3). Configure vs code for Microsoft C++. RSS. https://code.visualstudio.com/docs/cpp/config-msvc#_prerequisites </p>
+    </body>
+</html>
