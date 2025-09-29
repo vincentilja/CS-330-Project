@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Data Types and Naming Conventions</title>
+    </head>
+    <body>
+        <h1>Data Types and Naming Conventions</h1>
+        <h2>Variables</h2>
+        <h3>What is a Variable?</h3>
+        <body>
+            <p>A variable is a placeholder name that represents a specific data value of a certain data type.
+            Data types that can be represented as variables include: </p>
+            <!-- MAKE THIS INTO A NESTED LIST LATER-->
+            <li>int (short for integer): a positive or negative whole number,
+                 without decimal points (e.g. 32)</li>
+            <li>float: a positive or negative decimal number with slightly less precision with a size of 4 bytes (e.g. 78.9)</li>
+            <li>double: a positive or negative decimal number with slightly more precision with a size of 8 bytes (e.g. -32.8) </li>
+            <li>string: text characters (often but not necessarily words) 
+                unified by double quotation marks (e.g. "Handle with Care")</li>
+            <li>char: one single text character contained within single quotation marks (e.g. 'X')</li>
+            <li>bool: the values true or false (note that "true" and "false" are stated in all lowercase,
+                unlike other languages such as Python that require the first letter to be capitalized ("True", "False"))
+            </li>
+            <li>void: represents the absence of a value, especially for use in statements that return nothing</li>
+            <li></li>
+        <p>To declare a variable, one must state the data type (int, string, bool, etc.), add a space, write out the variable name,
+        add a space, type an equal sign, add a space, type out the value of the data type, and finish with a semicolon.
+        The finished product should look something like this:</p>
+            <li>int myNum = 32;</li>
+        <p>It should be noted that in order to create a string variable in C++, you must import the string library to your file first.</p>
+            <li>#include <string></li>
+            <li>string myGreeting = "Hello, World!";</li>
+        <p>The creation of a pointer variable proves to be equally interesting, requiring the addition of an asterisk at the end of
+            the data value and an ampersand before the declaration of a value.</p>
+            <li>string* myPointer = &myGreeting;</li>
+        <p>Now that you understand how to create a variable, we should discuss how Not to create a variable.</p>
+        <h3>Variable Naming Conventions</h3>
+        <p>Each variable must have a unique name, called an identifier. Remember that in order to create a variable in C++, you
+        must type something similar to this:</p>
+            <li>string identifier = "This is a variable";</li>
+        <p>However, C++ has built in rules that control what you can and cannot use as an identifier name. These rules can be listed
+        as follows: </p>
+            <li>Identifiers may include alphanumeric characters and underscores (_)*</li>
+            <li>Identifiers may not include whitespace characters ( ) or special characters (@#$%&^, etc.)</li>
+            <li>Identifiers are case-sensitive meaning that variablename and variableName aren't the same</li>
+            <li>Identifiers may start with a letter or an underscore (_) but they may
+                terminate with any alphanumeric or underscore character**</li>
+            <li>Identifiers must not be reserved words</li>
+        <p>These are naming conventions put forth by the compiler/interpreter, the following describes conventions put forth
+            by the community
+        </p>
+        <li>* Note that the ability to use underscore characters in identifier names means that when you use two words to
+        create an identifier, you can either state it as "variable_name" or "variableName"</li>
+        <li>** Although you technically can start a variable name with an uppercase letter or an underscore, you should
+        begin each identifier with a lowercase letter to follow naming conventions</li>
+        <h3>*** Reserved Words</h3>
+        <p>So what is a reserved word anyway?</p>
+        <p>A reserved word is a word that you cannot use as an identifier because it is used to represent a frequently used
+            data type, method, booleans, etc.</p>
+        <p>These include:</p>
+            <li>bool</li>
+            <li>char</li>
+            <li>int</li>
+            <li>float</li>
+            <li>double</li>
+            <li>void</li>
+            <li>if</li>
+            <li>else</li>
+            <li>do</li>
+            <li>break</li>
+            <li>while</li>
+            <li>true</li>
+            <li>false</li>
+            <li>etc.</li>
+        <p>For a full list of reserved words, consult your C++ manual or <a>https://www.geeksforgeeks.org/cpp/cpp-keywords/</a></p>
+        <p>As of right now, there are 84 reserved words in C++ but do not fret, you will become familiarized with them the more that you
+            work with the language</p>
+        <h2>Further Discussion Questions</h2>
+        <li>C++ is statically typed, meaning that each the data type and the value of each variable is
+            acknowledged by compile time</li>
+        <li>C++ is strongly typed in that strings and integers cannot be added together or else an error will result.
+            You can get around this by converting an integer to a string and vice versa</li>
+        <li>Variables in C++ are considered mutable as you can change the data values associated with a specific variable</li>
+        <li>All arithmetic operators are available for use with int, float, and double data types, but you may use the plus (+)
+            operator on strings for concatenation. Logical, relational, and assignment operators can be used by all data types </li>
+        <li>Mixed type operations are allowed between ints, floats, and doubles. Concatenation operations between strings and ints, floats,
+            and/or doubles are forbidden unless the latter data values have been converted to strings using the to_string() method</li>
+        <li>Identifier names and operators are bound in compile-time</li>
+        <li>C++ data values are explicitly typed because you must declare the data type of a variable before instantiating it</li>
+        <li>In C++ you can perform arithmetic operations on int, float, and double data types</li>
+        <li>However, in C++ you cannot redefine variables with values of foreign data types. You also are unable to create an array containing
+            values of different data types. When declaring an array, you must declare the data type of the elements contained within the array first</li>
+        <li>There aren't any built-in complex data types that are commonly used in the language as I have yet to come across one or I simply didn't
+             recognize it as such when encountering it</li>
+        </body>
+    </body>
+</html>
