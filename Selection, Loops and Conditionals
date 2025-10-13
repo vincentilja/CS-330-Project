@@ -151,10 +151,10 @@ Now what would happen if you were to use an or statement?
 ```
 int x = 9;
 if (x == 9 || x != 9){
-  cout << "This is a contradiction!" << endl;
+  cout << "This is not a contradiction!" << endl;
 }
 else{
-  cout << "Please do not use and operators like this!" << endl;
+  cout << "You can use or operators like this!" << endl;
 }
 ```
 This code would execute the code block contained under the "if" statement because it evaluates the statement to the left side of the logical operator, evaluates it to be true, and executes the statement below.
