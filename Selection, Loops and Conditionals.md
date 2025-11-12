@@ -7,17 +7,17 @@ In C++, as with just about every coding language, the Boolean data type refers t
 Note that "true" and "false" are spelled in all lower case, unlike other programming languages that require the first letter to be capitalized. This is also unlike other programming languages that use 0 and 1 to represent true and false respectively.
 We can use Boolean values to create conditional statements, or statements that will only execute under a specific condition.
 We can use comparison conditions to evaluate the truth or falsity of a given conditional statement. These include:
-- < (less than)
+- "<" (less than)
   - x < y reads as "x is less than y"
-- <= (less than or equal to)
+- "<=" (less than or equal to)
   - x <= y reads as "x is less than or equal to y"
-- > (greater than)
+- ">" (greater than)
   - x > y reads as "x is greater than y"
-- >= (greater than or equal to)
+- ">=" (greater than or equal to)
   - x >= y reads as "x is greater than or equal to y"
-- == (equal to)
+- "==" (equal to)
   - x == y reads as "x is equal to y"
-- != (not equal to)
+- "!=" (not equal to)
   - x != y reads as "x is not equal to y"
 ### Logical Operators
 We also use logical operators to evaluate the truth or falsity of multiple given conditional statements in a single line of code. These include:
