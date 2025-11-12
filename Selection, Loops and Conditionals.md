@@ -1,8 +1,8 @@
-#Selection, Loops, and Conditionals
+# Selection, Loops, and Conditionals
 
-##Conditional Statements
+## Conditional Statements
 
-###Comparison Conditions
+### Comparison Conditions
 In C++, as with just about every coding language, the Boolean data type refers to two values: true and false. 
 Note that "true" and "false" are spelled in all lower case, unlike other programming languages that require the first letter to be capitalized. This is also unlike other programming languages that use 0 and 1 to represent true and false respectively.
 We can use Boolean values to create conditional statements, or statements that will only execute under a specific condition.
@@ -19,7 +19,7 @@ We can use comparison conditions to evaluate the truth or falsity of a given con
   - x == y reads as "x is equal to y"
 - != (not equal to)
   - x != y reads as "x is not equal to y"
-###Logical Operators
+### Logical Operators
 We also use logical operators to evaluate the truth or falsity of multiple given conditional statements in a single line of code. These include:
 - && (and)
   - x && y means that both x and y must be true in order for the entire statement to be true
@@ -30,7 +30,7 @@ We also use logical operators to evaluate the truth or falsity of multiple given
 - ! (not)
   - you may also place an exclamation mark or "not" operator in front of two statements to invert their boolean values
   - if both values evaluated to be true, they will now be false and vice versa. if one statement was true and the other false, the not operator will change their truth values to false and true respectively
-###If... Else if... Else
+### If... Else if... Else
 You can use conditional statements in if-else if-else statements in order to execute lines of code in the contingency that a given statement is true or false.
 Let's say for example that we are trying to determine, given two integers, which value is greater than another.
 Then we can write a program that says:
@@ -132,7 +132,7 @@ else
 ```
 Technically curly braces were placed around the if-else statement but not around the code blocks contained within each if and else statement. This will create erroneous results. 
 Thankfully this problem is easy to avoid as long as you remember to create delimiting factors ({}) around each code block in an if-else if-else statement
-##Short Circuit Evaluation
+## Short Circuit Evaluation
 When using logical operators, you may run into errors by linking a conditional statement to another conditional statement in such a way that a contradiction is formed.
 Example:
 ```
@@ -158,7 +158,7 @@ else{
 }
 ```
 This code would execute the code block contained under the "if" statement because it evaluates the statement to the left side of the logical operator, evaluates it to be true, and executes the statement below.
-##Switch Statements
+## Switch Statements
 A switch statement can be used in lieu of an if-else if-else statement if you only need to evaluate the value of one condition, e.g. what month were you born on?
 Like if-else if-else conditions, each case must end with a "break;" statement, a unique delimiting factor used in switch statements. This allows you to bypass the other swtich statements and continue through the rest of your code.
 However, unlike if-else if-else statements that trigger a dangling else problem if each statement is not enclosed in curly braces, 
