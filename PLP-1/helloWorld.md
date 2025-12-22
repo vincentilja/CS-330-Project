@@ -1,12 +1,10 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>C++: Hello, World</title>
-    </head>
-    <body>
-        <h1>How to write Hello, World in C++</h1>
-        <h2>Visual Studio Code</h2>
-        <p>The first step of learning any program is being able to write it out. This is where Visual Studio Code (colloquially referred to as VSCode) comes into play!
+
+
+
+# C++: Hello, World
+## How to write Hello, World in C++
+### Visual Studio Code</h2>
+The first step of learning any program is being able to write it out. This is where Visual Studio Code (colloquially referred to as VSCode) comes into play!
             You can download VSCode by visiting this link: <a>https://code.visualstudio.com/download</a>, and downloading the version of VSCode corresponding to your operating
             system. Though this language doesn't come with a programming environment, VSCode is considered one of the best programming environments for C++. However, the user will
             need to complete a few extra steps before it is able to run.
@@ -28,7 +26,8 @@
         <h2>Hello, World</h2>
         <h3>Comments</h3>
         <p>Comments in C++ can be made by using two frontslashes</p>
-        <li>Example: // This is a comment</li>
+        <li>Example: 
+        ```// This is a comment```
         <h3>#include <iostream></h3>
             <p>This command allows the user to write statements from C++'s input-output library (io in iostream meaning "input-output"). Because a print statement is output, one must 
                 include this command if one wants to use input-output library functions </p>
@@ -43,13 +42,21 @@
         </p>
         <h3>cout</h3>
         <p>cout, read as "c out", is the output or print function in C++ that allows you to print a specified string, integer, etc. to a terminal. The syntax is as follows:</p>
-        <li>cout << "Hello, World!";</li>
+        <li>```cout << "Hello, World!";```</li>
         <p>Note that semicolons are required at the end of each statement</p>
         <h3>return</h3>
         <p>Users should include a return statement at the end of each function, even if it will not be used. For such a simple program with one output of one string, we can set the return value as 0</p>
-        <li>return 0</li>
-        <h2>Sources</h2>
-        <p>kartik. (2025, July 23). Understanding first C++ program. GeeksforGeeks. https://www.geeksforgeeks.org/cpp/writing-first-c-program-hello-world-example/</p>
-        <p>Microsoft. (2021, November 3). Configure vs code for Microsoft C++. RSS. https://code.visualstudio.com/docs/cpp/config-msvc#_prerequisites </p>
-    </body>
+        <li>```return 0```</li>
+        <h3> How to Write Hello World <h3>
+        ```
+        #include <iostream>
+        using namespace std;
+        int main() {
+        cout << "Hello, World!";
+        return 0;
+        }```
+        
+<h2>Sources</h2>
+<p>kartik. (2025, July 23). Understanding first C++ program. GeeksforGeeks. https://www.geeksforgeeks.org/cpp/writing-first-c-program-hello-world-example/</p>
+<p>Microsoft. (2021, November 3). Configure vs code for Microsoft C++. RSS. https://code.visualstudio.com/docs/cpp/config-msvc#_prerequisites </p>
 </html>
