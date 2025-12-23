@@ -165,3 +165,4 @@ int* ptr = new int;
 *ptr = 9;
 cout << *ptr << endl;
 ```
+It should be noted that there are side effects as part of function implementation, as C++ supports print and input statements with their iostream library.
