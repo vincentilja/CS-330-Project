@@ -166,3 +166,13 @@ int* ptr = new int;
 cout << *ptr << endl;
 ```
 It should be noted that there are side effects as part of function implementation, as C++ supports print and input statements with their iostream library.
+
+## Sources:
+- https://www.w3schools.com/cpp/cpp_functions.asp
+- https://www.w3schools.com/cpp/cpp_functions_recursion.asp
+- https://www.geeksforgeeks.org/cpp/split-a-sentence-into-words-in-cpp/
+- https://www.w3schools.com/cpp/cpp_vectors.asp
+- https://github-pages.ucl.ac.uk/research-computing-with-cpp/02cpp1/sec02PassByValueOrReference.html
+- https://www.geeksforgeeks.org/dsa/stack-vs-heap-memory-allocation/
+- https://www.geeksforgeeks.org/cpp/new-and-delete-operators-in-cpp-for-dynamic-memory/
+- https://www.w3schools.com/cpp/cpp_memory_management_new.asp
